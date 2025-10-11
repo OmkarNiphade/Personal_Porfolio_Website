@@ -340,7 +340,7 @@ export const projects = [
     description:
       "Developed a Telegram bot using Python that enables users to manage personal to-do lists directly through chat. The bot supports adding, viewing, and deleting tasks, with reminders and interactive command handling for a seamless user experience. Built with SQLite for lightweight data storage and deployed for easy bot interaction.",
     image:
-      "https://images.nanoy.fr/telegram-list-bot/screenshot1.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-8eG_e39tHYFW8J4vwCQBuBJI6r6rRFLsCCtHA7aRvusUEldPwx_2i6zCOv_yjHh_2I&usqp=CAU",
     tags: ["SQLite", "Chatbot Development", "Automation", "API Integration", "Advance Python", "Flask"],
     category: "chatbot application",
     github: "https://github.com/OmkarNiphade/Telegram_Todo_Bot",

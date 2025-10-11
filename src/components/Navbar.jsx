@@ -79,8 +79,8 @@ const ButtonContainer = styled.div`
 `;
 
 const GithubButton = styled.a`
-  border: 1px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.primary};
+  color: white;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -139,8 +139,8 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <ColorText>&lt;</ColorText>Rishav
-          <div style={{ color: theme.primary }}>/</div>Chanda
+          <ColorText>&lt;</ColorText>Omkar
+          <div style={{ color: theme.primary }}>/</div>Niphade
           <ColorText>&gt;</ColorText>
         </NavLogo>
 
@@ -183,12 +183,25 @@ const Navbar = () => {
             >
               Github Profile
             </GithubButton>
+            <GithubButton
+              href={Bio.linkedin}
+              target="_Blank"
+              style={{
+                background: theme.primary,
+                color: theme.text_primary,
+              }}
+            >
+              LinkedIn Profile
+            </GithubButton>
           </MobileMenu>
         )}
 
         <ButtonContainer>
           <GithubButton href={Bio.github} target="_Blank">
             Github Profile
+          </GithubButton>
+          <GithubButton href={Bio.linkedin} target="_Blank" style={{ marginLeft: "12px" }}>
+            LinkedIn Profile
           </GithubButton>
         </ButtonContainer>
       </NavbarContainer>

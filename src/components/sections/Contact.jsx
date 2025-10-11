@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import EarthCanvas from "../canvas/Earth";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+
 
 const Container = styled.div`
   display: flex;
@@ -126,47 +129,62 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
+  //hooks
+  const [open, setOpen] = React.useState(false);
   const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.resut();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_fbt3ow6', 'template_o139uv9', form.current, 'eBpeup3ESdft_S3Yi')
+    .then((result) => {
+      console.log("✅ Email Sent:", result.text);
+      alert("Email sent successfully!");
+      setOpen(true);
+      form.current.reset();
+    }, (error) => {
+      console.error("❌ Error:", error);
+      alert("Failed to send email.");
+    });
+};
 
   return (
     <Container>
       <Wrapper>
         <EarthCanvas />
         <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+            {/* Hidden date field */}
+          <input
+            type="hidden"
+            name="date"
+            value={new Date().toLocaleDateString('en-GB', {
+              day: '2-digit',
+              month: 'long',
+              year: 'numeric'
+            })}
+          />
+          <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)}>
+            <MuiAlert
+              onClose={() => setOpen(false)}
+              severity="success"
+              sx={{ width: '100%' }}
+              elevation={6}
+              variant="filled">
+              Email sent successfully!
+            </MuiAlert>
+          </Snackbar>
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

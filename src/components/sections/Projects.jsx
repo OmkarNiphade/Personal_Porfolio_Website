@@ -4,15 +4,16 @@ import { projects } from "../../data/constants";
 import ProjectCard from "../cards/ProjectCard";
 
 const Container = styled.div`
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-padding: 0 16px;
-align-items: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content-center;
+  position: relative;
+  z-index: 1;
+  padding: 0 16px;
+  align-items: center;
 `;
+
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -50,16 +51,16 @@ const Desc = styled.div`
 `;
 
 const ToggleButtonGroup = styled.div`
-display: flex;
-border: 1.5px solid ${({ theme }) => theme.primary};
-color: ${({ theme }) => theme.primary};
-font-size: 16px;
-border-radius: 12px;
-font-weight 500;
-margin: 22px 0;
-@media (max-width: 768px){
+  display: flex;
+  border: 1.5px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primary};
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  margin: 22px 0;
+  @media (max-width: 768px) {
     font-size: 12px;
-}
+  }
 `;
 
 const ToggleButton = styled.div`
@@ -76,8 +77,8 @@ const ToggleButton = styled.div`
   ${({ active, theme }) =>
     active &&
     `
-  background:  ${theme.primary + 20};
-  `}
+      background: ${theme.primary + 20};
+    `}
 `;
 
 const Divider = styled.div`
@@ -95,29 +96,21 @@ const CardContainer = styled.div`
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
+
   return (
     <Container id="Projects">
       <Wrapper>
         <Title>Projects</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
+        <Desc style={{ marginBottom: "40px" }}>
           I have worked on a wide range of projects, mainly focused on web applications. Here are some of my projects.
         </Desc>
+
         <ToggleButtonGroup>
-          <ToggleButton
-            active={toggle === "all"}
-            onClick={() => setToggle("all")}
-          >
+          <ToggleButton active={toggle === "all"} onClick={() => setToggle("all")}>
             ALL
           </ToggleButton>
           <Divider />
-          <ToggleButton
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
-          >
+          <ToggleButton active={toggle === "web app"} onClick={() => setToggle("web app")}>
             WEB APP'S
           </ToggleButton>
           <Divider />
@@ -135,19 +128,23 @@ const Projects = ({ openModal, setOpenModal }) => {
             OTHER'S
           </ToggleButton>
         </ToggleButtonGroup>
+
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCard
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
               />
             ))}
+
           {projects
             .filter((item) => item.category === toggle)
-            .map((project) => (
+            .map((project, index) => (
               <ProjectCard
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}

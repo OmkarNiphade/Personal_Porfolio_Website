@@ -122,10 +122,10 @@ const Projects = ({ openModal, setOpenModal }) => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "chatbot application"}
-            onClick={() => setToggle("chatbot application")}
+            active={toggle === "AI ML application"}
+            onClick={() => setToggle("AI ML application")}
           >
-            CHATBOT'S
+            AI ML APPLICATIONS
           </ToggleButton>
           <Divider />
           <ToggleButton

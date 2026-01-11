@@ -60,8 +60,7 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+          Hands-on experience as a software engineer, working on real-world projects across multiple organizations, including full-stack and AI-driven applications.
         </Desc>
 
         <VerticalTimeline>

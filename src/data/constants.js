@@ -1,7 +1,10 @@
+import loanAppImg from "../images/loan_app.png";
+
 export const Bio = {
   name: "Omkar Niphade",
   roles: [
     "Full Stack Developer",
+    "AI Developer",
     "Java Developer",
     "Web Developer",
     "Programmer",
@@ -9,7 +12,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/OmkarNiphade",
-  resume:"https://drive.google.com/file/d/15iVsLLjx5HoIuM64mbxcG8GXDUUVNFF9/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/18awifWiY1QSf-4Dw9-f9OL3b858K-44_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/omkar-niphade-329774270/",
   insta: "https://www.instagram.com/omkar_niphade_/",
   whatsapp: "https://wa.me/919923044629?text=Hello%20Omkar%20Niphade%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.",
@@ -24,6 +27,16 @@ export const skills = [
         name: "React Js",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      },
+      {
+        name: "Redux",
+        image:
+          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+      },
+      {
+        name: "TypeScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
       },
       {
         name: "Redux",
@@ -98,27 +111,37 @@ export const skills = [
     ],
   },
   {
-    title: "Android",
+    title: "AI & ML",
     skills: [
       {
-        name: "Java",
+        name: "Python",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },
-      // {
-      //   name: "Kotlin",
-      //   image:
-      //     "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-      // },
-      {
-        name: "XML",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
       {
-        name: "Android Studio",
+        name: "Tenserflow",
         image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/2560px-TensorFlow_logo.svg.png",
+      },
+      {
+        name: "Numpy",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1280px-NumPy_logo_2020.svg.png?20251223090330",
+      },
+      {
+        name: "Pandas",
+        image:
+          "https://pandas.pydata.org/static/img/pandas_mark.svg",
+      },
+      {
+        name: "Jupyter",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png",
+      },
+      {
+        name: "Google Colab",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/2560px-Google_Colaboratory_SVG_Logo.svg.png",
       },
     ],
   },
@@ -135,16 +158,12 @@ export const skills = [
         image:
           "https://img.icons8.com/?size=100&id=62856&format=png&color=FFFFFF",
       },
-      // {
-      //   name: "Firebase",
-      //   image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      // },
       {
         name: "VS Code",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-     {
+      {
         name: "Eclipse",
         image:
           "https://img.icons8.com/?size=100&id=rPAHs7H1vriV&format=png&color=000000",
@@ -167,32 +186,27 @@ export const skills = [
     ],
   },
   {
-    title: "Machine Learning",
+    title: "Android",
     skills: [
       {
-        name: "Python",
+        name: "Java",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      },
+      // {
+      //   name: "Kotlin",
+      //   image:
+      //     "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+      // },
+      {
+        name: "XML",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
       },
       {
-        name: "Tenserflow",
+        name: "Android Studio",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/2560px-TensorFlow_logo.svg.png",
-      },
-      {
-        name: "Keras",
-        image:
-          "https://miro.medium.com/v2/resize:fit:600/1*DKu_54iqz6C-p6ndo7rO3g.png",
-      },
-      {
-        name: "Jupyter",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png",
-      },
-      {
-        name: "Google Colab",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/2560px-Google_Colaboratory_SVG_Logo.svg.png",
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
       },
     ],
   },
@@ -297,15 +311,51 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "District Service Agent – Loan Management System",
+    date: "Dec 2025 - Jan 2026",
+    description:
+      "Built a powerful WhatsApp Bot using Advanced Python integrated with Twilio / Meta Cloud API, designed for rural businesses and productivity workflows. The bot offers menu-driven interactions, automated replies, and complete task management—supporting create, view, edit, and delete operations, all stored in an SQLite database and exported to Excel. The bot also handles scheduled reminders, task history viewing, and command-based help—all running on a local server exposed via Ngrok.",
+    image: loanAppImg,
+    tags: ["React.js","JavaScript","HTML5","CSS3","Node.js",],
+    category: "web app",
+    // github: "https://github.com/OmkarNiphade/WhatsApp_Bot",
+    // webapp: "https://vexa-app.netlify.app/",
+  },
+  {
+    id: 1,
+    title: "AI Code Reviewer + Auto Refractoring Suggestor",
+    date: "Oct 2025 - Nov 2025",
+    description:
+      "Developed an AI-based code review system that automatically analyzes source code and provides refactoring suggestions, best-practice improvements, and quality feedback.The system helps developers identify code smells, performance issues, and readability problems in real time.Implemented logic to generate clear suggestions and optimized code snippets, improving maintainability and efficiency.Designed with a scalable architecture to support multiple programming languages and future enhancements.",
+    image:"https://raw.githubusercontent.com/OmkarNiphade/AI-Code-Reviewer-Auto-Refractor-Suggestor/main/Code%20Reviewer.jpg",
+    tags: ["Artificial Intelligence (AI)","Machine Learning","Natural Language Procesing (NLP)","Automation","Rest API Integration","Code Analysis","Code Refractoring",],
+    category: "AI ML application",
+    github: "https://github.com/OmkarNiphade/AI-Code-Reviewer-Auto-Refractor-Suggestor",
+    // webapp: "https://vexa-app.netlify.app/",
+  },
+  {
+    id: 2,
+    title: "Personal Portfolio Website",
+    date: "Sep 2025 - Oct 2025",
+    description:
+      "Developed a responsive personal portfolio website using React.js and Tailwind CSS to showcase my projects, skills, and experience. The website features smooth animations with Framer Motion, a dynamic typewriter effect for roles, and an interactive 3D starry background using Three.js. It includes sections for About Me, Skills, Experience, Education, and Projects, with easy navigation and contact options. The site is optimized for performance and accessibility, ensuring a seamless user experience across devices.",
+    image:"https://raw.githubusercontent.com/OmkarNiphade/Personal_Porfolio_Website/main/Screenshot%202026-01-11%20160503.png",
+    tags: ["React.js","JavaScript","HTML5","CSS3","Node.js",],
+    category: "web app",
+    github: "https://github.com/OmkarNiphade/Personal_Porfolio_Website",
+    webapp: "https://my-portfolio-seven-kappa-85.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Resume & Job Match Analyzer",
     date: "Mar 2025 - May 2025",
     description:
       "Developed an AI-powered Resume Matcher web application using Streamlit to streamline the job search and resume optimization process. Users can upload PDF resumes, which are parsed with pdfplumber and analyzed using NLP techniques like keyword extraction and named entity recognition via spaCy. The app fetches real-time job listings through the Adzuna API, filters them by date, and calculates match scores based on resume-job alignment. It offers detailed job insights, keyword gap analysis, and AI-based resume improvement tips. Users can edit resume content in an integrated editor, export updated PDFs, manage favorite jobs, and apply directly with email confirmations. The project emphasizes real-time data handling, API integration, and user-focused design for a seamless job application experience.",
       image: "https://raw.githubusercontent.com/OmkarNiphade/Resume_Matcher_App/main/resume.png",
       tags: ["Stramlit", "Natural Language Processing (NLP)", "API Integration", "spaCy", "PDF Parsing (pdfplumber)","Advanced Python Development","AI Integration"],
-      category: "web app",
+      category: "AI ML application",
       github: "https://github.com/OmkarNiphade/Resume_Matcher_App",
-      webapp: "https://podstream.netlify.app/",
+      // webapp: "https://podstream.netlify.app/",
       member: [
       {
         name: "Omkar Niphade",
@@ -322,19 +372,19 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     title: "WhatsApp Bot",
     date: "Mar 2025 - Apr 2025",
     description:
       "Built a powerful WhatsApp Bot using Advanced Python integrated with Twilio / Meta Cloud API, designed for rural businesses and productivity workflows. The bot offers menu-driven interactions, automated replies, and complete task management—supporting create, view, edit, and delete operations, all stored in an SQLite database and exported to Excel. The bot also handles scheduled reminders, task history viewing, and command-based help—all running on a local server exposed via Ngrok.",
     image:"https://raw.githubusercontent.com/OmkarNiphade/WhatsApp_Bot/main/Screenshot%202025-07-07%20123533.png",
     tags: ["SQLite","WhatsApp Bot Development","Microsoft Excel","Automation","Rest API Integration",],
-    category: "chatbot application",
+    category: "AI ML application",
     github: "https://github.com/OmkarNiphade/WhatsApp_Bot",
     // webapp: "https://vexa-app.netlify.app/",
   },
   {
-    id: 2,
+    id: 5,
     title: "Telegram Todo Bot",
     date: "Feb 2025 - Mar 2025",
     description:
@@ -342,12 +392,12 @@ export const projects = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-8eG_e39tHYFW8J4vwCQBuBJI6r6rRFLsCCtHA7aRvusUEldPwx_2i6zCOv_yjHh_2I&usqp=CAU",
     tags: ["SQLite", "Chatbot Development", "Automation", "API Integration", "Advance Python", "Flask"],
-    category: "chatbot application",
+    category: "AI ML application",
     github: "https://github.com/OmkarNiphade/Telegram_Todo_Bot",
     // webapp: "https://brain-tumor.netlify.app/",
   },
   {
-    id: 3,
+    id: 6,
     title: "Employwise",
     date: "Dec 2024 - Jan 2025",
     description:
@@ -359,7 +409,7 @@ export const projects = [
     // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
   {
-    id: 4,
+    id: 7,
     title: "Password Generator",
     date: "Nov 2024 - Nov 2024",
     description:
@@ -371,7 +421,7 @@ export const projects = [
     // webapp: "https://omkarniphade.github.io/Password_Generator/",
   },
   {
-    id: 5,
+    id: 8,
     title: "CodSoft",
     date: "Jul 2024 - Aug 2024",
     description:

@@ -343,7 +343,7 @@ export const projects = [
     tags: ["React.js","JavaScript","HTML5","CSS3","Node.js",],
     category: "web app",
     github: "https://github.com/OmkarNiphade/Personal_Porfolio_Website",
-    webapp: "https://my-portfolio-seven-kappa-85.vercel.app/",
+    webapp: "https://personal-porfolio-website-ys9y.vercel.app/",
   },
   {
     id: 3,
